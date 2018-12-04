@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.example.zkw.blindview.ColorPickerView
+            android:id="@+id/cpv"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/rgb" />
+
+        <TextView
+            android:id="@+id/color_choose"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/cpv"
+            android:layout_marginBottom="114dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/submit_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/color_choose"
+            android:layout_alignRight="@+id/cpv"
+            android:text="确定" />
+
+    </RelativeLayout>
+</LinearLayout>
